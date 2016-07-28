@@ -1,0 +1,40 @@
+<div ng-controller = "usersController as UC" >
+  {{UC}}
+  <!-- <h1>Register</h1>
+  <form name = "registerForm">
+    <p>Firstname:
+    <input type="text" name = "first_name" ng-model="UC.regInfo.first_name" min-length="4" required /></p>
+    <p>Lastname:
+    <input type="text" ng-model="UC.regInfo.last_name" /></p>
+    <p>Email:
+    <input type="text" ng-model="UC.regInfo.email" /></p>
+    <p>Password:
+    <input type="password" ng-model="UC.regInfo.password"  /></p>
+    <button ng-click= "UC.register();">Register!</button>
+  </form>
+  <div ng-messages="registerForm.name.$error" role="alert">
+    <div ng-message ="required">
+      Name is required.
+    </div>
+
+  </div>
+
+  <h1>Login</h1>
+  <form>
+    <p>Email:
+    <input type="text" ng-model="UC.logInfo.email" /></p>
+    <p>Password:
+    <input type="password" ng-model="UC.logInfo.password"  /></p>
+    <button ng-click= "UC.login();">Login!</button>
+  </form> -->
+
+  <form name="registerForm">
+    <p>Your Name:
+      <input type="text" ng-model="UC.regInfo.name" required />
+      <button ng-click="UC.register()">Login !</button>
+    </p>
+  </form>
+
+  <div ng-messages = "registerForm.name.$error" role="alert">
+  </div>
+</div>

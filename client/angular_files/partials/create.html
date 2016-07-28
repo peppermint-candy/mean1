@@ -1,0 +1,31 @@
+<div>
+  <a href="/#dashboard">Cancel</a>
+</div>
+
+<div ng-controller = "pollsController as PC">
+  {{PC}}
+  <h2>Put the questoin and options here:</h2>
+  <form name="newPoll">
+    <p>
+      Question:
+      <input type="text" ng-model="newPoll.question" minlength="8" required />
+    </p>
+    <p>
+      Option1:
+      <input type="text" ng-model="newPoll.option1" minlength="3" required />
+    </p>
+    <p>
+      Option2:
+      <input type="text" ng-model="newPoll.option2" minlength="3" required />
+    </p>
+    <p>
+      Option3:
+      <input type="text" ng-model="newPoll.option3" minlength="3" required />
+    </p>
+    <p>
+      Option4:
+      <input type="text" ng-model="newPoll.option4" minlength="3" required />
+    </p>
+    <button ng-click="PC.createPoll()">Create Poll</button>
+  </form>
+</div>

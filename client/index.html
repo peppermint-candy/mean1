@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html ng-app='myApp'>
+  <head>
+    <meta charset="utf-8">
+    <title>Poll Report</title>
+    <script src = '/bower_components/angular/angular.js'></script>
+    <script src = '/bower_components/angular-route/angular-route.js'></script>
+    <script src = './angular_files/app.js'></script>
+
+    <!-- script tag for angular messages // ngMessages -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/angular-messages/1.5.8/angular-messages.js"></script>
+
+    <script src="/angular_files/controllers/users.js"></script>
+    <script src="/angular_files/controllers/polls.js"></script>
+    <script src="/angular_files/services/users.js"></script>
+    <script src="/angular_files/services/polls.js"></script>
+
+  </head>
+  <body>
+    <div ng-view="">
+    </div>
+
+  </body>
+</html>

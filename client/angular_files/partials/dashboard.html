@@ -1,0 +1,29 @@
+<!-- 1. userscontrollers here -->
+<!-- 2. pollscontroller here -->
+<div ng-controller = "usersController as UC">
+    <a href="/#create" >Create a New Poll</a> |
+    <a href="" ng-click="UC.logout();">Logout</a>
+    <h2>Welcome {{ UC.user.name }} </h2>
+</div>
+
+<div ng-controller = "pollsController">
+
+  <h2>Current Polls:</h2>
+  <input type="text" ng-model="search" />
+  <table>
+    <thead>
+      <th>Name</th>
+      <th>Question</th>
+      <th>Date Posted</th>
+      <th>Action</th>
+    </thead>
+    <tbody>
+      <tr ng-repeat = "poll in polls" | filter: search>
+        <td></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+</div>
